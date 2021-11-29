@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de usurio</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link rel="stylesheet" href="css/formUser.css" >
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="userForm" class="form " action="" method="post">
+                        <img src ="OchoBits.png" alt="">
+                        <h3 class="text-center text-info">Formulario de Usuario</h3>
+                        <div class="form-group">
+                            <label for="identificationUser">Identificación:</label><br />
+                            <input type="number" name="identificationUser" id="identificationUser" class="form-control"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <label for="username" >Nombre</label><br/>
+                            <input type="text" name="username" id="username" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="addressUser">Dirección</label><br>
+                            <input type="text" name="addressUser" id="addressUser"class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cellPhoneUser">Telefono</label><br>
+                            <input type="number" name="cellPhone" id="cellphoneUser"  class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailUser">Correo</label>
+                            <input type="email" name="emailUser" id="emailUser" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordUser">Contraseña</label><br>
+                            <input type="password" name="passwordUser" id="passwordUser" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zoneUser">Zona</label><br>
+                            <input type="text" name="zoneUser" id="zoneUser" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="typeUser" >Tipo Usuario</label><br>
+                            <select name="typeUser" id="typeUser"class="form-control" required>
+                                <option selected value="">Selecciona tipo de usuario</option> 
+                                <option value="coordinadorZona">Coordinador de zona</option>
+                                <option value="asesorComercial">Asesor Comercial</option>                                                             
+                              </select >                            
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group text-center">
+            <input type="submit" name="guardaeDatos" class="btn btn-dark btn-md" value="Guardar" onclick=""/>  
+            <input class="btn btn-dark btn-md" value="Cancelar" onclick=""/>                               
+        </div>
+       
+       </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./userForm.js"></script>
+</body>
+
+</html>

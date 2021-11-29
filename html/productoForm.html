@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario Productos</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link rel="stylesheet" href="css/registrar.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="userForm" class="form " action="" method="post">
+                        <h3 class="text-center text-info">Registrar Producto</h3>
+                        <div class="form-group">
+                            <label for="brandProd">Marca</label><br />
+                            <input type="text" name="brandProd" id="brandProd" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="modelProd">Modelo</label><br />
+                            <input type="text" name="modelProd" id="modelProd" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="processorProd">Procesador</label><br>
+                            <input type="text" name="processorProd" id="processorProd" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="osProd">Sistema Operativo</label><br>
+                            <input type="text" name="osProd" id="osProd" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descriptionProd"">Descripción</label>
+                            <input type="text" name="descriptionProd" id="descriptionProd" class="form-control"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="memoryProd">Memoria</label><br>
+                            <input type="number" name="memoryProd" id="memoryProd" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hardDriveProd">Disco duro</label><br>
+                            <input type="text" name="hardDriveProd" id="hardDriveProd" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="availabilityProd">Disponibilidad</label><br>
+                            <select name="availabilityProd" id="availabilityProd" class="form-control" required>
+                                <option selected value="">Selecciona disponibilidad</option>
+                                <option value="disponible">Disponible</option>
+                                <option value="noDisponible">No disponible</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="priceProd">Precio</label><br>
+                            <input type="number" name="priceProd" id="priceProd" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantityProd">Cantidad</label><br>
+                            <input type="number" name="quantityProd" id="quantityProd" class="form-control" required>
+                        </div>                        
+                </div>
+            </div>
+        </div>
+        <div class="form-group text-center">
+            <input type="submit" name="guardaeDatos" class="btn btn-dark btn-md" value="Guardar" onclick="" />
+            <input class="btn btn-dark btn-md" value="Cancelar" onclick="" />
+        </div>
+
+        </form>
+    </div>
+    
+</body>
+
+</html>
